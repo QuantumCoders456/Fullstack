@@ -1,2 +1,3 @@
 # Fullstack
-experiments:
+Experiments:
+Introduction to Modern JavaScript and DOM
