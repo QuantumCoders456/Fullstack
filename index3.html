@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Events Demo</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>JavaScript Click Event Example</h2>
+
+  <button id="btn1">Button 1</button>
+  <button id="btn2">Button 2</button>
+  <button id="btn3">Button 3</button>
+
+  <p id="message"></p>
+
+  <script>
+    // Select buttons
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+    const btn3 = document.getElementById('btn3');
+    const message = document.getElementById('message');
+
+    // Add click event listeners
+    btn1.addEventListener('click', () => {
+      message.textContent = "You clicked Button 1!";
+    });
+
+    btn2.addEventListener('click', () => {
+      message.textContent = "You clicked Button 2!";
+    });
+
+    btn3.addEventListener('click', () => {
+      message.textContent = "You clicked Button 3!";
+    });
+  </script>
+
+</body>
+</html>
