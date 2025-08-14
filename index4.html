@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Function Types</title>
+</head>
+<body>
+
+  <h2>Check the Console for Output</h2>
+
+  <script>
+    // i. Function Declaration
+    function greetUser(name) {
+      console.log("Hello, " + name + "! (from Declaration)");
+    }
+
+    // ii. Function Definition using Function Expression
+    const multiply = function(a, b) {
+      return a * b;
+    };
+
+    // iii. Arrow Function
+    const divide = (a, b) => {
+      return a / b;
+    };
+
+    // Calling the functions
+    greetUser("Pavithra");
+
+    const product = multiply(4, 5);
+    console.log("Product: " + product + " (from Function Expression)");
+
+    const result = divide(20, 4);
+    console.log("Quotient: " + result + " (from Arrow Function)");
+  </script>
+
+</body>
+</html>
