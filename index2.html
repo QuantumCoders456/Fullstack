@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Events Demo</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Events Example</h1>
+
+  <!-- Click Event -->
+  <button id="clickBtn">Click Me</button>
+
+  <!-- Mouse Over/Out Event -->
+  <div id="box">Hover Over Me</div>
+
+  <!-- Key Press Event -->
+  <input type="text" id="inputField" placeholder="Type something..." />
+
+  <!-- Inline JavaScript for Events -->
+  <script>
+    // Click event
+    document.getElementById("clickBtn").addEventListener("click", function() {
+      alert("Button was clicked!");
+    });
+
+    // Mouse over and mouse out events
+    const box = document.getElementById("box");
+    box.addEventListener("mouseover", function() {
+      box.style.backgroundColor = "lightgreen";
+      box.textContent = "Mouse is over me!";
+    });
+    box.addEventListener("mouseout", function() {
+      box.style.backgroundColor = "lightblue";
+      box.textContent = "Hover Over Me";
+    });
+
+    // Key press event
+    document.getElementById("inputField").addEventListener("keypress", function(event) {
+      console.log("Key pressed:", event.key);
+    });
+  </script>
+
+</body>
+</html>
